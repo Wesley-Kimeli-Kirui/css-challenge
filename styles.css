@@ -1,0 +1,751 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+Font
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap');
+
+ICons
+link:https://ionic.io/ionicons
+ */
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f5f5f5;
+  overflow-x: hidden;
+}
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("images/hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10rem;
+}
+nav .left {
+  display: flex;
+  align-items: center;
+}
+nav .right {
+  display: flex;
+  align-items: center;
+}
+nav .left h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+nav .left ul {
+  display: flex;
+}
+nav .left ul li {
+  margin-left: 2rem;
+}
+nav .left ul li a {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #f9f9ff;
+}
+.hero .right button {
+  padding: 0.8rem 1.5rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+.hero .right button:hover {
+  background-color: #f9f9ff;
+}
+.hero .right .b-member {
+  /* bluish background */
+  background-color: #1e90ff;
+  color: #fff;
+  /* align text and icon */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero .right .b-member:hover {
+  background-color: #fff;
+  color: #000;
+}
+.hero .right .b-member ion-icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+/* Global styles */
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Hero text */
+.hero .text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+  text-align: center;
+  max-width: 400px;
+}
+.hero .text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.hero .text p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+/* rouded transparents buttons */
+.hero .text .cta {
+  display: flex;
+  justify-content: center;
+}
+.hero .text .cta button {
+  padding: 0.8rem 1.5rem;
+  background-color: transparent;
+  border: 1px solid #fff;
+  /* border-radius: 3rem; */
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.hero .text .cta .quote {
+  background-color: #1e90ff;
+  color: #fff;
+}
+.hero .text .cta .quote:hover {
+  background-color: #fff;
+  color: #000;
+}
+/* Hero cards */
+.hero .cards {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 2rem;
+}
+.hero .cards .card {
+  width: 20rem;
+  height: auto;
+  margin-bottom: -12%;
+  background-color: #fff;
+  border-radius: 1rem;
+  margin-right: 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+.hero .cards .card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+.hero .cards .card ion-icon {
+  font-size: 2rem;
+  margin: 1rem;
+}
+.hero .cards .card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000;
+  margin: 1rem;
+}
+.hero .cards .card p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+  margin: 1rem;
+}
+/* #1e90ff to 3rd card */
+.hero .cards .card:nth-child(3) {
+  background-color: #1e90ff;
+  color: #fff !important;
+}
+.hero .cards .card:nth-child(3) ion-icon {
+  color: #fff !important;
+}
+.hero .cards .card:nth-child(3) h3 {
+  color: #fff !important;
+}
+.hero .cards .card:nth-child(3) p {
+  color: #fff !important;
+}
+/* #1e90ff color to 1st and 2nd card icons */
+.hero .cards .card:nth-child(1) ion-icon,
+.hero .cards .card:nth-child(2) ion-icon {
+  color: #1e90ff !important;
+}
+/* Info section */
+.info {
+  width: 100%;
+  background-color: #fff;
+  margin: 6rem 0;
+  margin-top: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8rem;
+}
+.info .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 20%; */
+}
+.info .col ion-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #1e90ff;
+}
+.info .col h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1rem;
+}
+.info .col p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 1rem;
+  width: 70%;
+  text-align: center;
+}
+/* industry section */
+.industry {
+  width: 100%;
+  background-color: #f5f5f5;
+  margin-top: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  /* position: inherit; */
+}
+.industry .top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+.industy .top h3 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1rem;
+}
+.industry .top p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 1rem;
+  width: 80%;
+  padding: 2px;
+  text-align: center;
+}
+.industry .bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.industry .bottom .card {
+  width: 20rem;
+  height: auto;
+  background-color: #fff;
+  border: 1px solid #bbbbbb;
+  border-radius: 0.5rem;
+  margin-right: 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  padding: 1rem;
+}
+.industry .bottom .card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+.industry .bottom .card img {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem 0;
+}
+.industry .bottom .card p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #737373;
+  margin: 1rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+.industry .bottom .rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+.industry .bottom .rating ion-icon {
+  font-size: 1.5rem;
+  color: #ffd700;
+  margin-right: 0.5rem;
+}
+.industry .company {
+  width: 80%;
+  padding: 2rem 0;
+}
+.industry .company .images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+.industry .company .images img {
+  width: 8rem;
+  height: auto;
+  padding: 1rem;
+}
+.industry .company .newsletter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  background: linear-gradient(to right, #1e90ff, #ff1493);
+}
+.industry .company .newsletter .input {
+  position: relative;
+  width: 100%;
+}
+.industry .company .newsletter h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.industry .company .newsletter .input input {
+  width: 70%;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  border-top-right-radius: 0;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #fff;
+}
+/* button inside input */
+.industry .company .newsletter .input button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30%;
+  height: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #1e90ff;
+  cursor: pointer;
+}
+/* pricing section */
+.pricing {
+  width: 100%;
+  background-color: #fff;
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8rem;
+}
+.pricing .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.pricing .intro h3 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1rem;
+}
+.pricing .intro p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 1rem;
+  width: 100%;
+  text-align: center;
+}
+.pricing .plans {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.pricing .plans .card {
+  width: 20rem;
+  height: auto;
+  background-color: #fff;
+  border: 1px solid #bbbbbb;
+  border-radius: 0.5rem;
+  /* margin-right: 2rem; */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  padding: 1rem;
+}
+.pricing .plans .card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+.pricing .plans .card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.pricing .plans .card p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #737373;
+  margin: 1rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+.pricing .plans .card .price {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+.pricing .plans .card .price h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e90ff;
+  margin-right: 0.5rem;
+}
+.pricing .plans .card .price p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1e90ff;
+}
+.pricing .plans .card ul {
+  list-style: none;
+  padding: 1rem 0;
+}
+.pricing .plans .card ul li {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #737373;
+  padding: 0.5rem 0;
+}
+.pricing .plans .card ul li ion-icon {
+  font-size: 1.5rem;
+  color: #1e90ff;
+  margin-right: 0.5rem;
+}
+.pricing .plans .card button {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #1e90ff;
+  cursor: pointer;
+}
+/* make center card bigger */
+.pricing .plans .card.standard {
+  background-color: #000000;
+  padding: 3rem 1rem;
+  color: #fff !important;
+}
+.pricing .plans .card.standard h3 {
+  color: #fff !important;
+}
+/* branches section */
+.branches {
+  width: 100%;
+  height: 140vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.branches .top {
+  height: 50%;
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3rem 2rem;
+  margin: auto;
+}
+.branches .top .left {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;  */
+  align-items: center;
+  color: #fff;
+}
+.branches .top .left h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.branches .top .left p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 1rem;
+  width: 100%;
+  text-align: flex-start;
+}
+.branches .top .right {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.branches .top .right img {
+  width: 50%;
+  height: auto;
+  /* display on top-right direction */
+  transform: translateX(10rem);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.branches .bottom {
+  height: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.branches .bottom .group,
+.branches .bottom button {
+  position: absolute;
+  bottom: 5%;
+  left: 20%;
+  text-align: center;
+}
+.branches .bottom button {
+  left: 70%;
+  transform: translateX(-50%);
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #1e90ff;
+  cursor: pointer;
+}
+.branches .bottom button:hover {
+  background-color: #000;
+}
+.branches .bottom .group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.branches .bottom .group h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1rem;
+}
+.branches .bottom .group p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 1rem;
+  width: 100%;
+  text-align: flex-start;
+}
+/* Appointment */
+.appointment {
+  width: 60%;
+  height: 50%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+}
+.appointment .left {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+.appointment .left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.appointment .right {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+.appointment .right h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.appointment .right form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.appointment .right form .form-group {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+.appointment .right form .form-group label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+.appointment .right form .form-group input {
+  width: 100%;
+  height: 2.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 0 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+  background-color: #f5f5f5;
+}
+.appointment .right form .form-group input:focus {
+  border: 1px solid #1e90ff;
+}
+.appointment .right form .form-group select {
+  width: 100%;
+  height: 2.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 0 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+  background-color: #f5f5f5;
+}
+.appointment .right form .form-group select:focus {
+  border: 1px solid #1e90ff;
+}
+.appointment .right form .form-group button {
+  width: 100%;
+  height: 2.5rem;
+  border: none;
+
+  border-radius: 0.5rem;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #1e90ff;
+  cursor: pointer;
+}
+
+/* Footer */
+.top {
+  width: 100%;
+  margin-top: 10%;
+  margin-bottom: 4%;
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+}
+.column-info {
+  display: flex;
+  flex-direction: column;
+}
