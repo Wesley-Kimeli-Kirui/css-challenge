@@ -1,384 +1,562 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- <link rel="stylesheet" href="https://ionic.io/ionicons"> -->
+    <!-- <link rel="stylesheet" href="https://ionic.io/ionicons" /> -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="./css/all.css" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   </head>
 
   <body>
-    <!-- Hero section -->
-    <section class="hero">
-      <!-- nav -->
-      <nav>
-        <div class="left">
-          <!-- Brandname -->
-          <h4>Brandname</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+    <section class="Home">
+      <div class="container-home">
+        <div class="top">
+          <div class="nav">
+            <h1>BrandName</h1>
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">Product</a>
+            <a href="#">Pricing</a>
+            <a href="#">Contact</a>
         </div>
-        <div class="right">
-          <button>Log In</button>
-          <button class="b-member">
-            Become a member <ion-icon name="arrow-forward-outline"></ion-icon>
-          </button>
+            <div class="login-singup">
+              <button class="login">Login</button>
+              <button class="singup">Become member &rarr;</button>
+            </div>
+          </div>
+
+          <div class="content">
+            <h1>
+              WE ENSURE A BEST <br />
+              INSUARANCE SERVICES
+            </h1>
+            <p>
+              We know how large object will act, but things on <br />small scale
+              just dont act act that way
+            </p>
+            <div class="btns">
+              <button class="btn-quote">Get Quote Now</button>
+              <button class="learn">Learn More</button>
+            </div>
+          </div>
         </div>
-      </nav>
-      <!-- Text -->
-      <div class="text">
-        <h1>We Ensure A Best Insurance Service</h1>
-        <p>
-          We Know how large objects will act, but things on a small scale just
-          do not act that way.
-        </p>
-        <div class="cta">
-          <button class="quote">Get a Quote Now</button>
-          <button>Learn More</button>
+        <div class="card-container">
+          <div class="card-peace-of-mind">
+            <iconify-icon
+              icon="bi:people"
+              style="color: rgb(87, 87, 252)"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <h4>Peace of Mind</h4>
+            <p>the lazy fox jumps over the lazy dog</p>
+          </div>
+          <div class="card-set-for-life">
+            <iconify-icon
+              icon="bi:people"
+              style="color: rgb(87, 87, 252)"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <h4>Set For Life</h4>
+            <p>the lazy fox jumps over the lazy dog</p>
+          </div>
+          <div class="card-satisfaction">
+            <iconify-icon
+              icon="bi:people"
+              style="color: white"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <h4>100% Satisfaction</h4>
+            <p>the lazy fox jumps over the lazy dog</p>
+          </div>
         </div>
-      </div>
-      <!-- Cards -->
-      <div class="cards">
-        <div class="card">
-          <ion-icon name="people-outline"></ion-icon>
-          <h3>Peace of Mind</h3>
-          <p>The quick, brown fox jumps over a lazy dog</p>
-        </div>
-        <div class="card">
-          <ion-icon name="people-outline"></ion-icon>
-          <h3>Set for Life</h3>
-          <p>The quick, brown fox jumps over a lazy dog</p>
-        </div>
-        <div class="card">
-          <ion-icon name="people-outline"></ion-icon>
-          <h3>Life Insurance</h3>
-          <p>The quick, brown fox jumps over a lazy dog</p>
+        <div class="home-footer-container">
+          <div class="peace-of-mind">
+            <iconify-icon
+              icon="system-uicons:book-closed"
+              style="color: blue"
+              width="50"
+              height="50"
+            ></iconify-icon>
+            <h5>Peace of Mind</h5>
+            <p>
+              So it really behaves like neither, <br />
+              Now we have given up
+            </p>
+          </div>
+          <div class="set-for-life">
+            <iconify-icon
+              icon="streamline:interface-bookmark-double-bookmarks-double-tags-favorite"
+              style="color: blue"
+              width="50"
+              height="50"
+            ></iconify-icon>
+            <h5>Set For Life</h5>
+            <p>
+              They were used to create the <br />
+              machines that launched
+            </p>
+          </div>
+          <div class="satisfaction">
+            <iconify-icon
+              icon="bi:people"
+              style="color: rgb(87, 87, 252)"
+              width="50"
+              height="50"
+            ></iconify-icon>
+            <h5>100% Satisfaction</h5>
+            <p>
+              So it really behaves like neither, <br />
+              Now we have given up
+            </p>
+          </div>
         </div>
       </div>
     </section>
-    <!-- Info section -->
-    <section class="info">
-      <div class="col">
-        <ion-icon name="folder-open-outline"></ion-icon>
-        <h3>Peace of Mind</h3>
-        <p>So it really behaves like neither, Now we have given up.</p>
-      </div>
-      <div class="col">
-        <ion-icon name="bookmarks-outline"></ion-icon>
-        <h3>Set For Life</h3>
-        <p>They were used to create the machines that launched</p>
-      </div>
-      <div class="col">
-        <ion-icon name="people-outline"></ion-icon>
-        <h3>100% Satisfaction</h3>
-        <p>So it really behaves like neither, Now we have given up.</p>
-      </div>
-    </section>
-    <!-- Industry section -->
     <section class="industry">
-      <div class="top">
-        <h3>Insurance by Industry</h3>
-        <p>So it really behaves like neither, Now we have given up.</p>
+      <div class="headline">
+        <h2>Industry</h2>
+        <p>
+          Problems trying to resolve the conflict between <br />
+          the two major realms of Classical Physics. Newtons mechanics
+        </p>
       </div>
-      <div class="bottom">
-        <div class="card">
-          <!-- Profile pic -->
-          <img src="images/user1.png" alt="User1" />
+      <div class="card-industry-container">
+        <div class="card-user">
+          <img src="./images/user1.png" alt="" />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-            temporibus a perspiciatis dolor ullam rem dolore dignissimos.
+            State helps you see how <br />
+            many more days you need <br />
+            to work to reach your financial <br />
+            goal for the month and year
           </p>
-          <!-- Rating -->
-          <div class="rating">
-            <span><ion-icon name="star"></ion-icon></span>
-            <span><ion-icon name="star"></ion-icon></span>
-            <span><ion-icon name="star"></ion-icon></span>
-            <span><ion-icon name="star"></ion-icon></span>
-            <span><ion-icon name="star-outline"></ion-icon></span>
+          <div class="icons">
+            <iconify-icon
+              icon="iconamoon:star-fill"
+              style="color: rgb(255, 187, 0)"
+            ></iconify-icon>
+            <iconify-icon
+              icon="iconamoon:star-fill"
+              style="color: rgb(255, 187, 0)"
+            ></iconify-icon>
+            <iconify-icon
+              icon="iconamoon:star-fill"
+              style="color: rgb(255, 187, 0)"
+            ></iconify-icon>
+            <iconify-icon
+              icon="iconamoon:star-fill"
+              style="color: rgb(255, 187, 0)"
+            ></iconify-icon>
+
+            <iconify-icon
+              icon="mdi:star-outline"
+              style="color: rgb(255, 187, 0)"
+            ></iconify-icon>
           </div>
         </div>
-        <!-- nw -->
-        <div class="card">
-          <!-- Profile pic -->
-          <img src="images/user2.png" alt="User2" />
+        <div class="card-user">
+          <img src="./images/user2.png" alt="" />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-            temporibus a perspiciatis dolor ullam rem dolore dignissimos.
+            State helps you see how <br />
+            many more days you need <br />
+            to work to reach your financial <br />
+            goal for the month and year
           </p>
-          <!-- Rating -->
-          <div class="rating">
-            <span><ion-icon name="star"></ion-icon></span>
-            <span><ion-icon name="star"></ion-icon></span>
-            <span><ion-icon name="star"></ion-icon></span>
-            <span><ion-icon name="star"></ion-icon></span>
-            <span><ion-icon name="star-outline"></ion-icon></span>
+          <div class="icons">
+            <iconify-icon
+              icon="iconamoon:star-fill"
+              style="color: rgb(255, 187, 0)"
+            ></iconify-icon>
+            <iconify-icon
+              icon="iconamoon:star-fill"
+              style="color: rgb(255, 187, 0)"
+            ></iconify-icon>
+            <iconify-icon
+              icon="iconamoon:star-fill"
+              style="color: rgb(255, 187, 0)"
+            ></iconify-icon>
+            <iconify-icon
+              icon="iconamoon:star-fill"
+              style="color: rgb(255, 187, 0)"
+            ></iconify-icon>
+
+            <iconify-icon
+              icon="mdi:star-outline"
+              style="color: rgb(255, 187, 0)"
+            ></iconify-icon>
           </div>
         </div>
-        <!-- nw -->
-        <div class="card">
-          <!-- Profile pic -->
-          <img src="images/user3.png" alt="User3" />
+        <div class="card-user">
+          <img src="./images/user3.png" alt="" />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-            temporibus a perspiciatis dolor ullam rem dolore dignissimos.
+            State helps you see how <br />
+            many more days you need <br />
+            to work to reach your financial <br />
+            goal for the month and year
           </p>
-          <!-- Rating -->
-          <div class="rating">
-            <span><ion-icon name="star"></ion-icon></span>
-            <span><ion-icon name="star"></ion-icon></span>
-            <span><ion-icon name="star"></ion-icon></span>
-            <span><ion-icon name="star"></ion-icon></span>
-            <span><ion-icon name="star-outline"></ion-icon></span>
+          <div class="icons">
+            <iconify-icon
+              icon="iconamoon:star-fill"
+              style="color: rgb(255, 187, 0)"
+            ></iconify-icon>
+            <iconify-icon
+              icon="iconamoon:star-fill"
+              style="color: rgb(255, 187, 0)"
+            ></iconify-icon>
+            <iconify-icon
+              icon="iconamoon:star-fill"
+              style="color: rgb(255, 187, 0)"
+            ></iconify-icon>
+            <iconify-icon
+              icon="iconamoon:star-fill"
+              style="color: rgb(255, 187, 0)"
+            ></iconify-icon>
+
+            <iconify-icon
+              icon="mdi:star-outline"
+              style="color: rgb(255, 187, 0)"
+            ></iconify-icon>
           </div>
         </div>
-        <!-- nw -->
       </div>
-      <div class="company">
-        <div class="images">
-          <img src="images/Vector.png" alt="Vector" />
-          <img src="images/Vector-1.png" alt="Vector-1" />
-          <img src="images/Vector-2.png" alt="Vector-2" />
-          <img src="images/Vector-3.png" alt="Vector-3" />
-          <img src="images/Vector-4.png" alt="Vector-4" />
-          <img src="images/Vector-5.png" alt="Vector-5" />
-        </div>
-        <div class="newsletter">
-          <h3>Subscribe for latest newsletter</h3>
-          <div class="input">
-            <input type="text" placeholder="Your email" />
-            <button>Subscribe</button>
-          </div>
+      <div class="patners">
+        <img src="./images/Vector.png" />
+        <img src="./images/Vector-1.png" />
+        <img src="./images/Vector-2.png" />
+        <img src="./images/Vector-3.png" />
+        <img src="./images/Vector-4.png" />
+        <img src="./images/Vector-5.png" />
+      </div>
+      <div class="industry-footer">
+        <h3>Subscribe For Latest <br />Newsletter</h3>
+        <div class="form">
+          <input type="email" placeholder="Your Email" class="input-email" />
+          <button>Subscribe</button>
         </div>
       </div>
     </section>
-    <!-- Pricing section -->
-    <div class="pricing">
-      <div class="intro">
-        <h3>Pricing</h3>
+    <section class="pricing">
+      <div class="headline">
+        <h2>Pricing</h2>
         <p>
-          But I must explain to you how all this mistaken idea of denouncing
-          pleasure and praising pain was born and I will give you a complete.
+          Problems trying to resolve the conflict between <br />
+          the two major realms of Classical Physics. Newtons mechanics
         </p>
       </div>
-      <div class="plans">
-        <div class="card free">
-          <h3>Free</h3>
-          <p>Organize across all apps by hand</p>
+      <div class="pricing-card-container">
+        <div class="card-first">
+          <h3>FREE</h3>
+          <p>Organize across all <br />apps by hand</p>
           <div class="price">
-            <h3>$0</h3>
+            <h1>0</h1>
+            <iconify-icon
+              icon="foundation:dollar"
+              style="color: blue"
+              width="20"
+              height="20"
+            ></iconify-icon>
             <p>Per month</p>
           </div>
-          <ul>
-            <li>
-              <ion-icon name="checkmark-circle"></ion-icon> Unlimited Updates
-            </li>
-            <li>
-              <ion-icon name="checkmark-circle"></ion-icon> Unlimited Products
-              Updates
-            </li>
-            <li>
-              <ion-icon name="checkmark-circle"></ion-icon> Unlimited Products
-              Updates
-            </li>
-            <li>
-              <ion-icon name="checkmark-circle-outline"></ion-icon> 1GB clound
-              Storage
-            </li>
-            <li>
-              <ion-icon name="checkmark-circle-outline"></ion-icon> Email and
-              community support
-            </li>
-          </ul>
-          <button>Try for Free</button>
+          <div class="icons-price">
+            <div class="icon-offers">
+              <iconify-icon
+                icon="mdi:tick-circle"
+                style="color: green"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              <span>Unlimited product updates</span>
+            </div>
+            <div class="icon-offers">
+              <iconify-icon
+                icon="mdi:tick-circle"
+                style="color: green"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              <span>Unlimited product updates</span>
+            </div>
+            <div class="icon-offers">
+              <iconify-icon
+                icon="mdi:tick-circle"
+                style="color: green"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              <span>Unlimited product updates</span>
+            </div>
+            <div class="icon-offers">
+              <iconify-icon
+                icon="mdi:tick-circle"
+                style="color: gray"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              <span>1GB Cloud storage</span>
+              </div>
+              <div class="icon-offers">
+                <iconify-icon
+                  icon="mdi:tick-circle"
+                  style="color: gray"
+                  width="20"
+                  height="20"
+                ></iconify-icon>
+                <span>Email and Community <br />Support</span>
+              </div>
+            </div>
+          <button class="btn-try">Try Premium</button>
         </div>
-        <div class="card standard">
-          <h3>Standard</h3>
-          <p>Organize across all apps by hand</p>
+        <div class="card-standard">
+          <h3>STANDARD</h3>
+          <p>Organize across all <br />apps by hand</p>
           <div class="price">
-            <h3>$9.99</h3>
+            <h1>9.99</h1>
+            <iconify-icon
+              icon="foundation:dollar"
+              style="color: blue"
+              width="20"
+              height="20"
+            ></iconify-icon>
             <p>Per month</p>
           </div>
-          <ul>
-            <li>
-              <ion-icon name="checkmark-circle"></ion-icon> Unlimited Updates
-            </li>
-            <li>
-              <ion-icon name="checkmark-circle"></ion-icon> Unlimited Products
-              Updates
-            </li>
-            <li>
-              <ion-icon name="checkmark-circle"></ion-icon> Unlimited Products
-              Updates
-            </li>
-            <li>
-              <ion-icon name="checkmark-circle-outline"></ion-icon> 1GB clound
-              Storage
-            </li>
-            <li>
-              <ion-icon name="checkmark-circle-outline"></ion-icon> Email and
-              community support
-            </li>
-          </ul>
-          <button>Try for Free</button>
+          <div class="icons-price">
+            <div class="icon-offers">
+              <iconify-icon
+                icon="mdi:tick-circle"
+                style="color: green"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              <span>Unlimited product updates</span>
+            </div>
+            <div class="icon-offers">
+              <iconify-icon
+                icon="mdi:tick-circle"
+                style="color: green"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              <span>Unlimited product updates</span>
+            </div>
+            <div class="icon-offers">
+              <iconify-icon
+                icon="mdi:tick-circle"
+                style="color: green"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              <span>Unlimited product updates</span>
+            </div>
+            <div class="icon-offers">
+              <iconify-icon
+                icon="mdi:tick-circle"
+                style="color: gray"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              <span>1GB Cloud storage</span>
+              </div>
+              <div class="icon-offers">
+                <iconify-icon
+                  icon="mdi:tick-circle"
+                  style="color: gray"
+                  width="20"
+                  height="20"
+                ></iconify-icon>
+                <span>Email and Community <br />Support</span>
+              </div>
+            </div>
+          <button class="btn-try">Try Premium</button>
         </div>
-        <div class="card premium">
-          <h3>Premium</h3>
-          <p>Organize across all apps by hand</p>
+
+        <div class="card-first">
+          <h3>PREMIUM</h3>
+          <p>Organize across all <br />apps by hand</p>
           <div class="price">
-            <h3>$19.99</h3>
+            <h1>19.99</h1>
+            <iconify-icon
+              icon="foundation:dollar"
+              style="color: blue"
+              width="20"
+              height="20"
+            ></iconify-icon>
             <p>Per month</p>
           </div>
-          <ul>
-            <li>
-              <ion-icon name="checkmark-circle"></ion-icon> Unlimited Updates
-            </li>
-            <li>
-              <ion-icon name="checkmark-circle"></ion-icon> Unlimited Products
-              Updates
-            </li>
-            <li>
-              <ion-icon name="checkmark-circle"></ion-icon> Unlimited Products
-              Updates
-            </li>
-            <li>
-              <ion-icon name="checkmark-circle-outline"></ion-icon> 1GB clound
-              Storage
-            </li>
-            <li>
-              <ion-icon name="checkmark-circle-outline"></ion-icon> Email and
-              community support
-            </li>
-          </ul>
-          <button>Try for Free</button>
+          <div class="icons-price">
+            <div class="icon-offers">
+              <iconify-icon
+                icon="mdi:tick-circle"
+                style="color: green"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              <span>Unlimited product updates</span>
+            </div>
+            <div class="icon-offers">
+              <iconify-icon
+                icon="mdi:tick-circle"
+                style="color: green"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              <span>Unlimited product updates</span>
+            </div>
+            <div class="icon-offers">
+              <iconify-icon
+                icon="mdi:tick-circle"
+                style="color: green"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              <span>Unlimited product updates</span>
+            </div>
+            <div class="icon-offers">
+              <iconify-icon
+                icon="mdi:tick-circle"
+                style="color: gray"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              <span>1GB Cloud storage</span>
+              </div>
+              <div class="icon-offers">
+                <iconify-icon
+                  icon="mdi:tick-circle"
+                  style="color: gray"
+                  width="20"
+                  height="20"
+                ></iconify-icon>
+                <span>Email and Community <br />Support</span>
+              </div>
+            </div>
+            <button class="btn-try">Try Premium</button>
+          </div>
+          
         </div>
       </div>
-    </div>
-    <!-- Branches section -->
-    <div class="branches">
-      <div class="top">
-        <div class="left">
-          <h3>We Have Branches All Over The World</h3>
+    </section>
+    <section class="branches">
+      <div class="head-section">
+        <div class="messages">
+          <h1>We Have Branches All <br />Over The World</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ipsa,
-            voluptatem omnis commodi delectus minima sint reiciendis vitae.
-            Fugiat debitis velit voluptate nulla quasi voluptas similique itaque
-            tenetur? Beatae, voluptatum.
+            The garudal accumulation of information about atomic and<br />
+            small-scale behaviour during the first quater of the 20th
+            <br />century, which gave some inidication about how small things
+            <br />
+            do behave produced an increasing confusion which was
+            <br />Heisenberg, and Born
           </p>
         </div>
-        <div class="right-bgimage">
-          <img src="images/pingwig.png" alt="World" />
+        <img src="./images/pingwig.png" />
+      </div>
+      <div class="appoinment">
+        <div class="img">
+          <img src="./images/contact.png" />
+        </div>
+        <div class="appointment-form">
+          <h3>Book Appointment</h3>
+          <label for="name" class="required">Name</label><br />
+          <input
+            type="text"
+            placeholder="Full Names"
+            class="input-fields"
+          /><br />
+          <label for="email" class="required">Email</label><br />
+          <input
+            type="email"
+            placeholder="example@ga,il.com"
+            class="input-fields"
+          /><br />
+          <label for="department" class="required">Department</label><br />
+          <select
+            id="selectDropdown"
+            name="selectDropdown"
+            class="input-fields-select"
+          >
+            <option value="option1">Please Select</option>
+            <option value="option2">ICT department</option>
+            <option value="option3">Finance Department</option></select
+          ><br />
+          <label for="time" class="required">Time</label><br />
+          <select
+            id="selectDropdown"
+            name="selectDropdown"
+            class="input-fields-select"
+          >
+            <option value="option1">4:00 Available</option>
+            <option value="option2">7:00 Available</option></select
+          ><br />
+          <button class="btn-appointment">Book Appointment</button>
         </div>
       </div>
-      <!-- nw -->
-      <div class="bottom">
-        <div class="group">
-          <h3>Consulting Agency For Your Business</h3>
-          <p>The quick, brown fox jumps over a lazy dog</p>
+      <div class="contact-us">
+        <div class="service">
+          <h3>Consulting Agency for your Bussiness</h3>
+          <p>the lazy fox jumps over the lazy dog</p>
         </div>
-        <button>Contact Us</button>
-      </div>
-      <!-- nw -->
-      <!-- Book Appointment card -->
-      <div class="appointment">
-        <div class="left">
-          <img src="images/contact.png" alt="Pic" />
-        </div>
-        <!-- nw -->
-        <div class="right">
-          <h3>Book An Appointment</h3>
-          <form action="#">
-            <!-- Name -->
-            <div class="form-group">
-              <label for="name">Name *</label>
-              <input type="text" id="name" placeholder="Full Name" />
-            </div>
-            <!-- Email -->
-            <div class="form-group">
-              <label for="email">Email *</label>
-              <input type="email" id="email" placeholder="Email" />
-            </div>
-            <!-- Department -->
-            <div class="form-group">
-              <label for="department">Department *</label>
-              <select name="department" id="department">
-                <option value="Marketing">Marketing</option>
-                <option value="Sales">Sales</option>
-                <option value="IT">IT</option>
-                <option value="HR">HR</option>
-              </select>
-            </div>
-            <!-- Time, select -->
-            <div class="form-group">
-              <label for="time">Time *</label>
-              <select name="time" id="time">
-                <option value="9:00am - 10:00am">9:00am - 10:00am</option>
-                <option value="10:00am - 11:00am">10:00am - 11:00am</option>
-                <option value="11:00am - 12:00pm">11:00am - 12:00pm</option>
-                <option value="12:00pm - 1:00pm">12:00pm - 1:00pm</option>
-              </select>
-            </div>
-            <!-- Submit -->
-            <div class="form-group">
-              <button>Book Appointment</button>
-            </div>
-          </form>
+        <div class="btn-contact-us">
+          <button>Contact Us</button>
         </div>
       </div>
-    </div>
-    <!-- nw -->
-    <!-- Footer section -->
-    <div class="footer">
-      <div class="top">
-        <!-- 5 columns -->
-        <div class="column-info">
-          <h3>Company Info</h3>
-          <a href="#">About Us</a>
-          <a href="#">Carrier</a>
-          <a href="#">We are hiring</a>
-          <a href="#">Blog</a>
+    </section>
+    <section class="footer">
+      <div class="footer-container">
+        <div class="company-info">
+          <h4>Company info</h4>
+          <p>About Us</p>
+          <p>Carrier</p>
+          <p>We are hiring</p>
+          <p>Blog</p>
         </div>
-        <div class="column-info">
-          <h3>Legal</h3>
-          <a href="#">About Us</a>
-          <a href="#">Carrier</a>
-          <a href="#">We are hiring</a>
-          <a href="#">Blog</a>
+        <div class="legal">
+          <h4>Legal</h4>
+          <p>About Us</p>
+          <p>Carrier</p>
+          <p>We are hiring</p>
+          <p>Blog</p>
         </div>
-        <div class="column-info">
-          <h3>Features</h3>
-          <a href="#">Business Marketing</a>
-          <a href="#">User Analytic</a>
-          <a href="#">Live Chat</a>
-          <a href="#">Unlimited support</a>
+        <div class="features">
+          <h4>Features</h4>
+          <p>Bussiness Marketing</p>
+          <p>User analytic</p>
+          <p>Live Chart</p>
+          <p>Unlimited support</p>
         </div>
-        <div class="column-info">
-          <h3>Get in Touch</h3>
-          <a href="#">IOS & Android</a>
-          <a href="#">Watch a Demo</a>
-          <a href="#">Customers</a>
-          <a href="#">API</a>
+        <div class="resources">
+          <h4>Resources</h4>
+          <p>IOS & Android</p>
+          <p>Watch a Demo</p>
+          <p>Customers</p>
+          <p>Api</p>
         </div>
-        <div class="column-info">
-          <h3>Get in Touch</h3>
-          <i class="fa-light fa-phone">(480)555-0103</i>
-          <i class="fa-duotone fa-location-dot">4517 Washington Aven.</i>
-          <i class="fa-duotone fa-envelope">debra.holt@example.com</i>
+        <div class="get-in-touch">
+          <h4>Get in touch</h4>
+          
+          <p><iconify-icon icon="ph:phone" style="color: blue;" width="15" height="15"></iconify-icon>+254720555703</p>
+          <p><iconify-icon icon="mi:location" style="color: blue;" width="15" height="15"></iconify-icon>Nairobi,kenya</p>
+          <p><iconify-icon icon="clarity:email-solid" style="color: blue;" width="15" height="15"></iconify-icon>#</p>
         </div>
       </div>
-      <div class="bottom"></div>
-    </div>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
+    </section>
+    <section class="main-footer">
+        <div class="footer-last">
+            <p>All right reserved Created  by &copy; </p>
+            <div class="icons">
+                <iconify-icon icon="logos:facebook" width="20"></iconify-icon>
+                <iconify-icon icon="iconoir:instagram" style="color: blue;" width="20"></iconify-icon>
+                <iconify-icon icon="logos:twitter" width="20" height="20"></iconify-icon>
+            </div>
+        </div>
+    </section>
   </body>
 </html>
